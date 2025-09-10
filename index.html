@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alohida Notifications</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-10 flex gap-4">
+
+  <!-- Tugmalar -->
+  <button id="btnSuccess" class="btn btn-success">Obuna bolish</button>
+  <button id="btnError" class="btn btn-error">Obuna bolish</button>
+  <button id="btnWarning" class="btn btn-warning">Obuna bolish</button>
+
+  <!-- Success (chapdan chiqadi) -->
+  <div id="notifSuccess" class="toast toast-start translate-x-[-200%] transition-all duration-1000 fixed top-5 left-5">
+    <div class="alert alert-success">
+      <span>buna boldingiz.</span>
+    </div>
+  </div>
+
+  <!-- Error (o‘ngdan chiqadi) -->
+  <div id="notifError" class="toast toast-end translate-x-[200%] transition-all duration-1000 fixed top-5 right-5">
+    <div class="alert alert-error">
+      <span>buna boldingiz.</span>
+    </div>
+  </div>
+
+  <!-- Warning (pastdan chiqadi) -->
+  <div id="notifWarning" class="toast translate-y-[200%] transition-all duration-1000 fixed bottom-5 left-1/2 -translate-x-1/2">
+    <div class="alert alert-warning">
+      <span>buna boldingiz</span>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
